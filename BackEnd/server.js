@@ -184,6 +184,6 @@ app.get("/clientes", async(req,res) => {
 
 
 // Ouvir porta
-app.listen(3000, () => {
-    console.log("Servidor Rodando na porta: 3000")
+app.listen(process.env.PORTA, () => {
+    console.log("Servidor Rodando na porta:" + process.env.PORTA);
 });
