@@ -4,7 +4,7 @@ require('dotenv').config(); //Reconhecer o .env
 // Crie a conexão com o banco de dados
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root',      
+  user: 'root',     
   password: process.env.SENHADB,      
   database: 'auaufollow'  
 });
